@@ -1,0 +1,180 @@
+.title {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* ====== */
+/* Part 1 */
+/* ====== */
+
+.outer-box {
+  width: 75%;
+  height: 65vh;
+  background: #999;
+  margin: 10vh auto;
+  padding-top: 45px;
+}
+
+.inner-box {
+  position: relative;
+  top: 20px;
+  width: 75%;
+  height: 500px;
+  background: black;
+  margin: auto;
+}
+
+.inner-box div {
+  position: absolute;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.inner-box div:nth-child(1) {
+  top: 20px;
+  left: 20px;
+}
+.inner-box div:nth-child(2) {
+  top: 20px;
+  right: 20px;
+}
+.inner-box div:nth-child(3) {
+  bottom: 20px;
+  left: 20px;
+}
+.inner-box div:nth-child(4) {
+  bottom: 20px;
+  right: 20px;
+}
+
+/* ====== */
+/* Part 2 */
+/* ====== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.box {
+  height: 200px;
+}
+
+.box:hover {
+  background: lightpink;
+  height: 240px;
+}
+
+.box:nth-child(2) {
+  border: 10px solid palevioletred;
+}
+
+input:focus {
+  width: 500px;
+}
+
+#one,
+#two,
+#three,
+#four {
+  border: solid black 1px;
+  text-align: center;
+}
+
+#one {
+  background: salmon;
+  width: 200px;
+  position: static;
+}
+
+#two {
+  background: lawngreen;
+  width: 450px;
+  position: relative;
+  top: 100px;
+  left: 200px;
+}
+
+#three {
+  background: fuchsia;
+  width: 250px;
+  position: absolute;
+  top: 105vh;
+  left: 45vw;
+  right: 45vw;
+  bottom: 45vh;
+}
+
+#four {
+  background: papayawhip;
+  width: 75px;
+  height: 75px;
+  position: fixed;
+  top: 5px;
+  right: 5px;
+}
+
+.display-demo {
+  width: 300px;
+  border: 5px solid red;
+}
+
+.display-block div {
+  display: block;
+}
+
+.display-inline div {
+  display: inline;
+}
+
+.display-inline-block div {
+  display: inline-block;
+}
+
+.display-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-it {
+  display: flex;
+}
+
+.display-none div {
+  /* display: none; */
+  /* visibility: hidden; */
+}
+
+/* ====== */
+/* Part 3 */
+/* ====== */
+
+.parallax {
+  /* The image used */
+  background: url("https://static.pexels.com/photos/69372/pexels-photo-69372.jpeg");
+  background-size: contain;
+
+  /* Set a specific height */
+  height: 400px;
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bottom-background {
+  height: 120vh;
+}
